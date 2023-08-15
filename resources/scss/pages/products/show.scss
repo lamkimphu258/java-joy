@@ -1,0 +1,30 @@
+@import "../../components/button.scss";
+
+#detail {
+    @apply grid grid-cols-1 md:grid-cols-2 py-10 gap-y-10;
+
+    #image {
+        @apply justify-self-center;
+    }
+
+    #information {
+        @apply flex flex-col space-y-4;
+
+        #title {
+            @apply text-6xl font-bold uppercase;
+        }
+
+        #description,
+        #price {
+            @apply text-lg font-mono;
+        }
+
+        .size {
+            @apply border border-primaryBlack p-2 rounded-md hover:bg-primaryBlack hover:text-white cursor-pointer duration-500 uppercase;
+
+            &.active {
+                @apply bg-primaryBlack text-white;
+            }
+        }
+    }
+}

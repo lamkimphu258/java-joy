@@ -1,0 +1,11 @@
+.pagination {
+    @apply py-8;
+
+    .pagination-item {
+        @apply border-primaryBlack bg-primaryColor hover:text-white hover:bg-primaryBlack duration-200;
+    }
+
+    .active {
+        @apply bg-primaryBlack text-white;
+    }
+}

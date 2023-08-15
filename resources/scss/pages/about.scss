@@ -1,0 +1,23 @@
+#about-me {
+    @apply py-10 flex flex-col gap-y-10 md:flex-row items-center md:items-start gap-x-10;
+
+    #profile-picture {
+        @apply rounded-full max-w-sm;
+    }
+
+    #detail-information {
+        @apply flex flex-col gap-y-10;
+
+        #introduction {
+            @apply text-lg font-mono;
+        }
+
+        #social-profile {
+            @apply flex flex-row gap-x-4;
+
+            .social-icon {
+                @apply hover:scale-125 duration-500;
+            }
+        }
+    }
+}

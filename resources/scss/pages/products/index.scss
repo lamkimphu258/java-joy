@@ -1,0 +1,40 @@
+@import "../../components/button.scss";
+@import "../../custom-pagination.scss";
+
+.product-container {
+    @apply grid grid-cols-1 md:grid-cols-3 md:gap-8 gap-y-8 my-12;
+
+    .product-title {
+        @apply text-6xl text-center font-bold uppercase;
+    }
+
+    .product-card {
+        @apply flex flex-col justify-center items-center py-7 px-11 border border-slate-500 border-opacity-10 hover:border-primaryBlack hover:border-opacity-100 rounded-lg hover:cursor-pointer;
+
+        .product-title {
+            @apply text-5xl font-bold uppercase;
+        }
+
+        .product-description {
+            @apply py-4 font-mono;
+        }
+
+        .product-image {
+            @apply py-8;
+        }
+
+        .product-price {
+            @apply font-mono text-lg pt-4;
+        }
+    }
+}
+
+.product-filter {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    @apply p-4 uppercase appearance-none rounded-md border border-primaryBlack bg-primaryColor md:w-[200px] w-full;
+}
+
+

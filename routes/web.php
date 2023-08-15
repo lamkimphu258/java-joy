@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::prefix('/')->group(base_path('/routes/resources/general.php'));
+Route::prefix('/products')->group(base_path('/routes/resources/products.php'));
+Route::prefix('/posts')->group(base_path('/routes/resources/posts.php'));

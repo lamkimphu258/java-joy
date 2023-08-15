@@ -1,0 +1,64 @@
+.navbar {
+    @apply sticky z-50 left-0 top-0 right-0 py-6 bg-primaryColor drop-shadow-xl z-[9999];
+
+    .navbar-wrap {
+        @apply container mx-auto relative flex flex-row justify-between items-center px-4;
+
+        .logo {
+            @apply flex flex-row space-x-2 items-center;
+
+            .brand-name {
+                @apply text-2xl uppercase font-bold;
+            }
+        }
+
+        .nav-menu {
+            @apply hidden md:flex space-x-10 text-lg font-semibold font-sans uppercase tracking-widest;
+
+            .nav-link {
+                span {
+                    @apply pb-2;
+                }
+
+                &:hover,
+                &.active {
+                    @apply underline underline-offset-8;
+                }
+            }
+        }
+
+        #hamburger-menu {
+            @apply flex flex-col md:hidden space-y-1;
+
+            .hamburger-item {
+                @apply w-8 h-1 bg-primaryBlack rounded-lg duration-500;
+            }
+
+            &.open {
+                .hamburger-top {
+                    @apply rotate-45;
+                }
+
+                .hamburger-middle {
+                    @apply hidden;
+                }
+
+                .hamburger-bottom {
+                    @apply -rotate-45 -translate-y-2;
+                }
+            }
+        }
+    }
+
+    #mobile-menu {
+        @apply absolute top-24 right-0 left-0 flex flex-col justify-start items-center space-y-6 text-xl transition-[height] h-0 overflow-hidden duration-1000 bg-primaryColor;
+
+        &.open {
+            @apply h-56;
+        }
+
+        .nav-link.active {
+            @apply underline underline-offset-8;
+        }
+    }
+}

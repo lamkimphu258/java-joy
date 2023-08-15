@@ -1,0 +1,7 @@
+.content {
+    @apply font-mono space-y-4;
+
+    .content-title {
+        @apply text-4xl uppercase font-bold mb-2;
+    }
+}

@@ -1,0 +1,11 @@
+.btn {
+    @apply border py-3 px-14 rounded-md font-mono text-lg duration-300 uppercase;
+}
+
+.btn-primary {
+    @apply text-primaryBlack bg-primaryColor hover:bg-primaryBlack hover:text-primaryColor;
+}
+
+.btn-secondary {
+    @apply text-primaryBlack border-primaryBlack bg-primaryColor hover:bg-primaryBlack hover:text-primaryColor;
+}

@@ -1,0 +1,39 @@
+@import "../../custom-pagination.scss";
+
+#posts {
+    @apply space-y-10;
+
+    #search {
+        @apply px-4 py-2 rounded-md w-full border border-primaryBlack;
+    }
+
+    #posts-container {
+        @apply grid grid-cols-1 lg:grid-cols-[3fr_10px_1fr] gap-x-2;
+
+        #post-container {
+            @apply max-w-7xl space-y-10 flex-1;
+
+            .post {
+                .title {
+                    @apply text-4xl font-bold uppercase hover:underline cursor-pointer leading-loose;
+                }
+
+                .description {
+                    @apply font-mono text-lg;
+                }
+            }
+        }
+
+        #featured-posts {
+            @apply space-y-6;
+
+            #title {
+                @apply text-4xl font-bold uppercase text-center mt-4 xl:mt-0;
+            }
+
+            .featured-item {
+                @apply hover:underline font-mono text-lg uppercase;
+            }
+        }
+    }
+}

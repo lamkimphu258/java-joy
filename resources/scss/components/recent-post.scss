@@ -1,0 +1,23 @@
+.post-container {
+    @apply flex flex-col md:flex-row md:space-x-10 space-y-20 md:space-y-0;
+
+    .post {
+        @apply flex flex-col space-y-2;
+
+        .post-thumbnail-container {
+            @apply overflow-hidden;
+
+            .post-thumbnail {
+                @apply rounded-md mb-5 hover:scale-125 duration-500 cursor-pointer;
+            }
+        }
+
+        .post-time {
+            @apply font-mono;
+        }
+
+        .post-title {
+            @apply text-3xl uppercase font-bold;
+        }
+    }
+}

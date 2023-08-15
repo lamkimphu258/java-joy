@@ -1,0 +1,38 @@
+@import "./partials/navbar.scss";
+@import "./partials/footer.scss";
+
+body {
+    @apply text-primaryBlack bg-primaryColor flex flex-col min-h-screen;
+}
+
+#main {
+    @apply flex-1;
+}
+
+.w-container {
+    @apply container mx-auto px-4;
+}
+
+.section {
+    @apply py-32;
+}
+
+.bg-primary {
+    @apply bg-primaryColor text-primaryBlack;
+}
+
+.bg-black {
+    @apply bg-primaryBlack text-primaryColor;
+}
+
+.section-title {
+    @apply text-6xl uppercase font-bold leading-snug text-center mb-10;
+}
+
+.vertical-line {
+    @apply border border-primaryBlack max-w-[1px];
+}
+
+.no-content-message {
+    @apply text-4xl font-bold uppercase;
+}

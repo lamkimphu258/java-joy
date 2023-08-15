@@ -1,0 +1,147 @@
+@import "../components/button.scss";
+
+#hero {
+    @apply bg-primaryBlack;
+
+    #hero-wrapper {
+        @apply flex flex-col lg:flex-row lg:justify-between px-2 space-y-4 lg:space-y-0;
+
+        .hero-text {
+            @apply flex flex-col items-center text-center justify-center space-y-4 max-w-4xl text-primaryColor lg:items-start lg:text-start;
+
+            .hero-introduction {
+                @apply text-6xl lg:text-8xl text-primaryColor uppercase font-bold leading-tight max-w-2xl;
+            }
+
+            .hero-description {
+                @apply font-mono text-lg;
+            }
+        }
+
+        .hero-img {
+            @apply relative lg:mr-20;
+
+            #hero-stamp {
+                @apply hidden bottom-10 lg:absolute lg:block;
+            }
+        }
+    }
+}
+
+#featured-product {
+    @apply px-2;
+
+    .title-wrapper {
+        @apply text-center;
+
+        .title {
+            @apply text-6xl font-bold leading-tight;
+        }
+
+        .description {
+            @apply font-mono;
+        }
+    }
+}
+
+#info {
+    @apply bg-primaryBlack pb-0;
+
+    .info-content {
+        @apply mb-8 lg:text-center text-primaryColor;
+
+        .info-title {
+            @apply text-[80px] font-bold leading-tight;
+        }
+
+        .info-description {
+            @apply font-mono text-lg max-w-4xl lg:mx-auto;
+        }
+    }
+
+    .video-container {
+        @apply w-full h-[600px] overflow-hidden;
+
+        video {
+            @apply w-full h-full object-cover;
+        }
+    }
+}
+
+#menu {
+    @apply bg-primaryBlack text-primaryColor;
+
+    .menu-wrapper {
+        @apply grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] lg:gap-x-10;
+
+        .menu-introduction {
+            @apply mb-12 lg:mb-0 relative;
+
+            .menu-title {
+                @apply text-7xl font-bold leading-tight max-w-3xl;
+            }
+
+            .menu-description {
+                @apply text-lg font-mono leading-loose;
+            }
+        }
+
+        .menu-right-side {
+            @apply flex flex-col space-y-10;
+
+            .menu-card {
+                @apply p-14 border border-primaryColor border-opacity-20 rounded-lg;
+
+                .menu-title {
+                    @apply font-bold text-4xl;
+                }
+
+                .menu-content {
+                    @apply list-disc mt-2 font-mono text-lg space-y-2 ml-5;
+                }
+            }
+        }
+    }
+}
+
+#testimonial {
+    .testimonial-container {
+        @apply relative;
+
+        .arrow {
+            @apply w-[50px] h-[50px] cursor-pointer absolute border border-primaryBlack rounded-lg top-[50%] z-50;
+        }
+
+        .arrow-left {
+            @apply left-0;
+        }
+
+        .arrow-right {
+            @apply right-0;
+        }
+
+        .quote {
+            @apply text-center;
+
+            img {
+                @apply mx-auto mb-8;
+            }
+
+            .content {
+                @apply font-mono text-2xl mb-8 px-[20%] md:px-[10%];
+            }
+
+            .author {
+                @apply font-bold text-4xl mb-4;
+            }
+
+            .role {
+                @apply font-mono uppercase text-xl;
+            }
+        }
+    }
+}
+
+#recent-posts {
+    @apply bg-primaryBlack;
+}
